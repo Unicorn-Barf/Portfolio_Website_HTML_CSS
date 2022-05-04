@@ -1,0 +1,74 @@
+/* Declare Variable for font and Color */
+:root {
+
+}
+
+/* Set all Elements to border-boxes for easy formatting */
+* {
+  box-sizing: border-box;
+}
+
+/* Want all website elements to display block as collumn */
+body {
+  display: block;
+}
+
+/* Make Header banner sticky to scroll with page */
+/* Worked with Classmate nifer to do this */
+header {
+  position: sticky;
+  top: 0px;
+}
+
+/* Center my Main Header*/
+header h1 {
+  position: sticky;
+  top: 0px;
+  text-align: center;
+}
+
+/* Format my nav buttons with flexbox to be centered */
+/* Make sticky to scroll with page */
+/* Margin on bottom to space away from main content */
+nav {
+  position: sticky;
+  top: 60px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+/* Format my nav links */
+a {
+  width: 20%;
+}
+
+
+/* Set main to display flex in column direction */
+main {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Use Flexbox to format my projects section */
+.project-section {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Formats actual project tiles to flexbox */
+.projects {
+  display: flex;
+  flex-direction: row;
+}
+
+img {
+  width: 25%;
+  height: 25%;
+}

@@ -1,6 +1,9 @@
 /* Declare Variable for font and Color */
 :root {
-
+  --dk: #5e3575;
+  --lt: #c676f5;
+  --bg: #bfaed4;
+  --ltfc: #ffffff;
 }
 
 /* Set all Elements to border-boxes for easy formatting */
@@ -9,22 +12,29 @@
 }
 
 /* Want all website elements to display block as collumn */
+/* Sets margin for whole body section */
 body {
   display: block;
+  background-color: var(--bg);
+  font-family: 'Trebuchet MS', sans-serif;
 }
 
 /* Make Header banner sticky to scroll with page */
-/* Worked with Classmate nifer to do this */
+/* Worked with Classmate Nifer to do this */
 header {
   position: sticky;
   top: 0px;
+  z-index: 1;
+  height: 100px;
+  background-color: var(--lt);
 }
 
 /* Center my Main Header*/
 header h1 {
-  position: sticky;
-  top: 0px;
   text-align: center;
+  margin: auto;
+  vertical-align: middle;
+  line-height: 100px;
 }
 
 /* Format my nav buttons with flexbox to be centered */
@@ -32,17 +42,32 @@ header h1 {
 /* Margin on bottom to space away from main content */
 nav {
   position: sticky;
-  top: 60px;
+  top: 100px;
   display: flex;
-  justify-content: center;
-  margin-bottom: 100px;
+  justify-content: space-around;
+  align-content: center;
+  padding: 10px;
+  margin-bottom: 150px;
+  z-index: 1;
+  background-color: var(--dk);
 }
 
-/* Format my nav links */
-a {
+/* Format Nav Button Text */
+nav a {
+  padding: 10px;
   width: 20%;
+  text-align: center;
+  color: var(--ltfc);
+  text-decoration: none;
+  border: white;
+  border-radius: 10px;
 }
 
+/* Underline nav buttons when hovering */
+nav a:hover {
+  border: 5px dotted chartreuse;
+  cursor: crosshair;
+}
 
 /* Set main to display flex in column direction */
 main {
@@ -51,10 +76,20 @@ main {
   align-content: center;
 }
 
+/* Flexbox format my about section */
+/* adds margin to bottom to separate from main section */
 .about {
   display: flex;
   flex-direction: row;
+  margin-bottom: 200px;
 }
+
+/* format profile image */
+.profile-pic {
+  width: 25%;
+  height: 25%;
+}
+
 
 /* Use Flexbox to format my projects section */
 .project-section {
@@ -62,13 +97,56 @@ main {
   flex-direction: row;
 }
 
-/* Formats actual project tiles to flexbox */
-.projects {
-  display: flex;
-  flex-direction: row;
+/* set with of project description */
+.project-dscr {
+  width: 15%;
+  min-height: 300px;
 }
 
-img {
-  width: 25%;
-  height: 25%;
+/* Formats main project and secondary project section to flexbox */
+div.projects {
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+}
+
+/* formats main project */
+/* adds background image */
+.main-project {
+  width: 33.3%;
+  background-image: url("../images/beautiful_placeholder.jpg");
+  /* add background colors in case no image renders */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Formats secondary projects to flexbox */
+/* 2 tiles then wrap */
+.secondary-projects {
+  width: 66.6%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Secondary projects tile formatting */
+/* makes 4x4 grid with background image */
+.secondary-projects a{
+  width: 50%;
+  height: 50%;
+  background-image: url("../images/beautiful_placeholder.jpg");
+  /* add background colors in case no image renders */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Center Align the footer */
+footer {
+  text-align: center;
+}
+
+/* add left/right margin to contact items  for spacing*/
+footer a {
+  margin: 0 5px;
 }

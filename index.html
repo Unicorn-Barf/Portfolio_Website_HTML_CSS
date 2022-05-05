@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nolan Spence</title>
+  <link rel="stylesheet" href="./assets/css/reset.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
@@ -18,9 +19,9 @@
   <!-- This is my navigation bar-->
   <nav>
     <!-- Nav buttons navigate to appropriate website section -->
-    <a href="#about">About</a>
-    <a href="#projects">Projets</a>
-    <a href="#contact">Contact</a>
+    <a href="#about">ABOUT</a>
+    <a href="#projects">PROJECTS</a>
+    <a href="#contact">CONTACT</a>
     <!-- Add Resume in future -->
   </nav>
 
@@ -32,7 +33,7 @@
     <section class="about" id="about">
 
       <!-- This is my profile picture -->
-      <img src="./assets/images/beautiful_placeholder.jpg" alt="A beautiful placeholder image">
+      <img class="profile-pic" src="./assets/images/beautiful_placeholder.jpg" alt="A beautiful placeholder image">
 
       <!-- This is my about article -->
       <article>
@@ -62,7 +63,7 @@
     <!-- This is my project section linked to nav bar with id -->
     <section class="project-section" id="projects">
       <!-- Separate box for a Projects header and brief description -->
-      <div>
+      <div class="project-dscr">
         <h2>My Projects</h2>
         <p>These projects are all part of my journey to become the best coder I can be, ENJOY!</p>
       </div>
@@ -70,35 +71,31 @@
       <!-- Grid display of project tiles with Header and background images -->
       <div class="projects">
         <!-- my featured project to be displayed larger-->
-        <a target="_blank">
+        <a class="main-project" href="https://unicorn-barf.github.io/homework_1/" target="_blank">
           <h3>Favorite Project</h3>
-          <img src="./assets/images/beautiful_placeholder.jpg" alt="A beautiful placeholder image">
         </a>
 
         <!-- My additional projects to be displayed smaller -->
-        <div>
+        <div class="secondary-projects"
+        >
           <!-- Project 2 -->
           <a target="_blank">
             <h3>COMING SOON</h3>
-            <img src="./assets/images/beautiful_placeholder.jpg" alt="A beautiful placeholder image">
           </a>
 
           <!-- Project 3 -->
           <a target="_blank">
             <h3>COMING SOON</h3>
-            <img src="./assets/images/beautiful_placeholder.jpg" alt="A beautiful placeholder image">
           </a>
 
           <!-- Project 4 -->
           <a target="_blank">
             <h3>COMING SOON</h3>
-            <img src="./assets/images/beautiful_placeholder.jpg" alt="A beautiful placeholder image">
           </a>
 
           <!-- Project 5 -->
           <a target="_blank">
             <h3>COMING SOON</h3>
-            <img src="./assets/images/beautiful_placeholder.jpg" alt="A beautiful placeholder image">
           </a>
         </div>
       </div>

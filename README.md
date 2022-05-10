@@ -115,6 +115,7 @@ From my experience gained working on this project I have realized my lack of ski
 - [Markdown Guide](https://www.markdownguide.org/basic-syntax/) - I continue to use this source as a referernce when writing my README.md to understand markdown syntax.
 - [Difference between sticky and fixed position](https://stackoverflow.com/questions/19501919/difference-between-positionsticky-and-positionfixed) - This stackoverflow question helped me immensely in understanding the difference between sticky and fixed position so that I could effectively implement my sticky navbar and header.
 - [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - This flexbox guide was a helpful quick reference when I had trouble with positioning my elements.
+- [Transitions on hover](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions) - I used this page as a reference to have hover transitions in my CSS.
 ​
 ## Author
 ​

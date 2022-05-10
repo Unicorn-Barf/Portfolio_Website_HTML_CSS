@@ -51,9 +51,9 @@ nav {
   top: 100px;
   display: flex;
   justify-content: space-around;
-  align-content: center;
+  align-items: center;
   padding: 10px;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
   z-index: 1;
   background-color: var(--dk);
 }
@@ -73,7 +73,7 @@ nav a {
 nav a:hover {
   padding: 5px;
   border: 5px dotted var(--accent);
-  cursor: crosshair;
+  cursor: pointer;
 }
 
 /* Set main to display flex in column direction */
@@ -88,11 +88,12 @@ main {
 .about {
   display: flex;
   flex-direction: row;
-  margin-bottom: 200px;
+  margin: 0 20px 200px 20px;
 }
 
 /* format profile image */
 .profile-pic {
+  margin-right: 30px;
   width: 25%;
   height: 25%;
 }
@@ -102,13 +103,13 @@ main {
 .project-section {
   display: flex;
   flex-direction: row;
-  margin: 0 20px 300px 20px;
+  min-height: 300px;
+  margin: 0 20px 200px 20px;
 }
 
 /* set with of project description */
 .project-dscr {
   width: 15%;
-  min-height: 300px;
 }
 
 /* Formats main project and secondary project section to flexbox */
@@ -121,12 +122,17 @@ div.projects {
 /* formats main project */
 /* adds background image */
 .main-project {
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 33.3%;
   background-image: url("../images/beautiful_placeholder.jpg");
   /* add background colors in case no image renders */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border: 4px solid var(--dk);
 }
 
 /* Formats secondary projects to flexbox */
@@ -140,13 +146,27 @@ div.projects {
 /* Secondary projects tile formatting */
 /* makes 4x4 grid with background image */
 .secondary-projects a{
-  width: 50%;
-  height: 50%;
+  margin: 5px;
+  width: 47%;
+  height: 47%;
   background-image: url("../images/beautiful_placeholder.jpg");
   /* add background colors in case no image renders */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid var(--dk);
+}
+
+
+/* Formats Project titles and description */
+a>h3 {
+  background-color: var(--dk);
+  width: 100%;
+  text-align: center;
+  color: var(--ltfc);
 }
 
 /* Center Align the footer */
@@ -162,4 +182,59 @@ footer a {
   text-decoration: none;
   color: var(--ltfc);
   background-color: var(--dk);
+}
+
+/* For tablet size and smaller, website reformats to fit content */
+@media screen and (max-width: 992px) {
+
+  /* About me section to display column */
+  .about {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 25px 300px 25px;
+  }
+
+  /* Project section is display column */
+  .project-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px 300px 20px;
+  }
+  /* Format My Projects description height */
+  .project-dscr {
+    min-height: auto;
+    align-self: center;
+    width: 80%;
+    text-align: center;
+  }
+
+  /* Project tiles section display column */
+  div.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .main-project {
+    width: 80%;
+    min-height: 300px;
+  }
+
+  /* Secondary project tiles container display column */
+  .secondary-projects {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  /* Secondary project tiles width to 100% */
+  .secondary-projects a {
+    width: 100%;
+    min-height: 150px;
+  }
 }

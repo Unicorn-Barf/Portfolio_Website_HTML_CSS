@@ -25,25 +25,25 @@ I challenged myself to built a personal portfolio website using HTML and CSS to 
 
 ### User Story
 ​
-AS AN employer
-I WANT to view a potential employee's deployed portfolio of work samples
-SO THAT I can review samples of their work and assess whether they're a good candidate for an open position.
+AS AN employer\
+I WANT to view a potential employee's deployed portfolio of work samples\
+SO THAT I can review samples of their work and assess whether they're a good candidate for an open position.\
 ​
 ### Acceptance Criteria
 ​
-GIVEN I need to sample a potential employee's previous work
-WHEN I load their portfolio
-THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
-WHEN I click one of the links in the navigation
-THEN the UI scrolls to the corresponding section
-WHEN I click on the link to the section about their work
-THEN the UI scrolls to a section with titled images of the developer's applications
-WHEN I am presented with the developer's first application
-THEN that application's image should be larger in size than the others
-WHEN I click on the images of the applications
-THEN I am taken to that deployed application
-WHEN I resize the page or view the site on various screens and devices
-THEN I am presented with a responsive layout that adapts to my viewport
+GIVEN I need to sample a potential employee's previous work\
+WHEN I load their portfolio\
+THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them\
+WHEN I click one of the links in the navigation\
+THEN the UI scrolls to the corresponding section\
+WHEN I click on the link to the section about their work\
+THEN the UI scrolls to a section with titled images of the developer's applications\
+WHEN I am presented with the developer's first application\
+THEN that application's image should be larger in size than the others\
+WHEN I click on the images of the applications\
+THEN I am taken to that deployed application\
+WHEN I resize the page or view the site on various screens and devices\
+THEN I am presented with a responsive layout that adapts to my viewport\
 ​
 ### Screenshot
 ​
@@ -120,4 +120,4 @@ From my experience gained working on this project I have realized my lack of ski
 ​
 My teacher, Emmanuel Jacuban, helped me with understanding scroll-padding-top in CSS to keep my sticky navbar and heading from covering my page scroll links.
 
-My tutor, Jacob Norman, helped me understand how CSS selectors could specifically reference elements through heiarchy and not just individual class and id.  He also should be cool dynamic effects CSS can achieve using pseudo classes like hover.
+My tutor, Jacob Norman, helped me understand how CSS selectors could specifically reference elements through hiearchy and not just individual class and id.  He also should be cool dynamic effects CSS can achieve using pseudo classes like hover.

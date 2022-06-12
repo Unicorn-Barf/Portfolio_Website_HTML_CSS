@@ -183,7 +183,7 @@ div.projects {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url("../images/code_snippet.png");
+  background-image: url("../images/NaNarWord.png");
   background-color: var(--lt);
   background-position: center;
   background-repeat: no-repeat;
@@ -234,6 +234,11 @@ div.projects {
   transform: scale(1.03);
 }
 
+/* Unique project card background image */
+.code-snippet {
+  background-image: url("../images/code_snippet.png") !important;
+}
+
 
 /* Formats Project titles and description */
 a>h3 {
@@ -249,7 +254,7 @@ a>h3 {
 
 /* Formats skills used list */
 a>ul {
-  color: var(--ltfc);
+  color: black;
   text-align: center;
   align-self: center;
   justify-self: flex-end;

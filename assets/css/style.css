@@ -239,6 +239,10 @@ div.projects {
   background-image: url("../images/code_snippet.png") !important;
 }
 
+.freakimono {
+  background-image: url("../images/freakimono.png") !important;
+}
+
 
 /* Formats Project titles and description */
 a>h3 {
